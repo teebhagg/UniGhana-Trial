@@ -11,3 +11,185 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.Home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header > img {
+  display: none;
+  margin: auto 0;
+}
+
+.header:last-child{
+  display: none;
+}
+
+/* .logo {
+  width: 100px;
+  height: 50px;
+} */
+
+nav ul {
+  display: flex;
+  margin: auto;
+  list-style: none;
+}
+
+nav li {
+  margin: auto 20px auto 0;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #666;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 20px;
+}
+
+.universities{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.university {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.university h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.university p {
+  margin: 0 0 10px;
+  font-size: 16px;
+}
+
+.university img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer ul {
+  display: flex;
+  list-style: none;
+}
+
+.footer li {
+  margin-right: 20px;
+}
+
+.footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #666;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .header > img {
+    display: flex;
+  }
+/* 
+  .logo {
+    margin-bottom: 10px;
+  } */
+
+  /* nav {
+    margin-top: 10px;
+  } */
+
+  nav ul {
+    /* flex-direction: column; */
+    display: none;
+  }
+/* 
+  nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  } */
+
+  .content {
+    padding: 10px;
+  }
+
+  .university {
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .university h2 {
+    font-size: 20px;
+  }
+
+  .university p {
+    font-size: 14px;
+  }
+
+  .footer ul {
+    flex-direction: column;
+  }
+
+  .footer li {
+    margin: 0;
+    margin-bottom: 10px;
+    }
+    
+    .footer a {
+    font-size: 14px;
+    }
+    }
